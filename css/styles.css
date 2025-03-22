@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none; 
+}
+
+html{
+    box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Makes the page height span the full viewport */
+    width: 100vw; /* Makes the page width span the full viewport */
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the image */
+}
+.custom-blur::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(16px); /* Adjust the blur amount as needed */
+    z-index: -1; /* Place the blur behind the content */
+}
+
+
+.nav ul{
+ font-weight: 600;
+ display: inline;
+ 
+}
+
+.custom-bold {
+    font-weight: 650; /* 700 is bold weight */
+}
+
+.custom-primary-bg{
+    background-color: #CEFF1A;
+}
+
+
+.custom-secondary-bg{
+    background-color: #2191FB;
+}
+
+.active a {
+    padding-bottom: 8px;;
+    border-bottom: 5px solid #CEFF1A; /* Bottom border color */
+}
+.event {
+    text-align: center;
+    position: relative;
+    width: 60px
+}
+
+.circle {
+
+    width: 20px;
+    height: 20px;
+    border: 3px solid grey; /* Green border */
+    border-radius: 50%;
+    background-color: transparent; /* No fill color */
+    position: relative;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+.event::before,
+.event::after {
+    content: '';
+    position: absolute;
+    width: 150%; /* Make the line stretch horizontally */
+    height: 2px;  /* Line thickness */
+    background-color: grey; /* Grey line */
+    top: 50%;  /* Align the line in the middle of the circle */
+    left: 0;
+    z-index: 1;
+}
+
+
+
+.event::before {
+    top: 9px;  /* Adjusts the line above the circle */
+    left: -68px;
+}
+
+.event::after {
+    top: 9px;  /* Adjusts the line below the circle */
+    left: 37px;
+}
+.timeline .event p {
+    font-size: 14px;
+}
+.event-box{
+    width: 50px;
+}
+
+.custom-tb-size{
+    width: 300px;
+}
+
+.timeline-active{
+    border: 3px solid #CEFF1A
+}
+
+
+.timeline-finished{
+    background-color: #CEFF1A;
+    border: 3px solid #CEFF1A
+}
