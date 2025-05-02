@@ -6,6 +6,7 @@
     <title>Easi-claims</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <body class="container position-relative custom-blur">
 
@@ -19,9 +20,9 @@
                 </div>
                 <div  class="nav_options col-md-8 d-inline-flex justify-content-bewteen align-items-center gap-5">
                     <ul  class="d-flex m-0 gap-5">
-                        <li class="active"><a class="custom-bold" href="register.html">pay account</a></li>
-                        <li class="home"><a class="custom-bold" href="#">edit beneficiaries</a></li>
-                        <li class="home"><a class="custom-bold" href="#">claims</a></li>
+                        <li class="active"><a class="custom-bold" href="pay_now.html">pay account</a></li>
+                        <li class="home"><a class="custom-bold" href="manage_beneficiaries.html">edit beneficiaries</a></li>
+                        <li class="home"><a class="custom-bold" href="manage_claims.html">claims</a></li>
                     </ul>
                     <button class="btn btn-danger rounded-1 ms-3 border-0">
                         <a href="index.html" class="text-decoration-none text-white">Logout</a>
@@ -33,71 +34,171 @@
 
         <div class="content w-100 h-100 d-flex justify-content-start position-relative align-items-start">
 
-            <div class="statement col-md-12 w-100 px-4">
-                <h2 style="font-size: 60px;"class="fs-1 mb-4 mt-2 custom-bold">Hi, Sithembiso Malinga</h2>
+            <div class="statement col-md-6 w-100 px-4">
+
+                <div class="d-flex">
+                    <div class="card shadow w-50 border-0">
+                        <div class="card-body">
+                            <h2 style="font-size: 60px;" class="fs-1 mb-1 mt-2 custom-bold">Hi, Sithembiso Malinga</h2>
+                            <p>Your account is up to date! <a href="#">view statement</a></p>
+                        </div>
+                    </div>
+                    <div class="d-flex w-50">
+                        <div class="card border-0">
+                            <div class="card-body icon-box">
+                                <a href="#" class="d-flex align-items-center text-decoration-none flex-nowrap">
+                                    <i class="fa-solid fa-chart-line fs-2 px-3 py-2 rounded-circle" style="color: #2191FB; background-color: #B7DCFF;"></i>
+                                    <div class="d-flex flex-column flex-nowrap">
+                                        <p class="mb-0 text-nowrap">TOTAL CLAIMS</p>
+                                        <p class="mb-0 fw-bold text-nowrap text-center fs-1">1</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="card-body icon-box">
+                                <div  class="d-flex align-items-center flex-nowrap">
+                                    <a href="#" class="d-flex align-items-center text-decoration-none flex-nowrap">
+                                                <i style="color: #2AE55C;background-color: #B2FEC6;" class="fa-solid fa-check fs-2 px-3 py-2 rounded-circle"></i>
+                                                <div class="d-flex flex-column">
+                                                    <p class="mb-0 text-nowrap">APPROVED</p>
+                                                    <p class="mb-0 fw-bold text-nowrap text-center fs-1">1</p>
+                                                </div>
+                                            </a>
+                                            </div>
+                            </div>
+                    </div>
+                <div class="card border-0">
+                    <div class="card-body icon-box border-0">
+                        <div  class=" d-flex align-items-center flex-nowrap">
+                            <a href="#" class="d-flex align-items-center text-decoration-none flex-nowrap">
+                                        <i style="color: #F94D4D;background-color: #F9CCCC;" class="fa-solid fa-circle-exclamation fs-2 px-3 py-2 rounded-circle"></i>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-nowrap">REJECTED</p>
+                                            <p class="mb-0 fw-bold text-nowrap text-center fs-1">0</p>
+                                        </div>
+                                    </a>
+                                    </div>
+                    </div>
+            </div>
+                    </div>
+                </div>
+                
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <div class="policy-card">
-                            <p class="fs-4 m-0"><a href="#">Policy Summary</a></p>
-                            <div class="policy-card-header border rounded">
-                                <h5 class="mb-0">Policy #12345</h5>
-                                <p><strong>Policy Type:</strong> Funeral Cover</p>
-                                <p><strong>Status:</strong> Active</p>
-                                <div class="d-flex gap-3 mb-3">
-                                    <a href="#" class="btn btn-primary">Change policy</a>
+                        <div class=" card shadow policy-card border-0">
+                            
+                            <div class="card-body ">
+                                <p class="m-0 fw-bold"><a href="#">POLICY SUMMARY</a></p>
+                                <div class="row">
+                                    <div class="col-6 d-flex justify-content-start mb-3">
+                                        <div class="d-flex align-items-start rounded">
+                                            <i style="color: #2191FB; background-color: #B7DCFF;background-color: #B7DCFF;" class="fa-solid fa-shield-halved fs-2 px-3 py-2 rounded"></i>
+                                            <div class="d-flex flex-column mx-3">
+                                                <p class="mb-0 text-nowrap">POLICY NUMBER</p>
+                                                <p class="mb-0 fw-bold text-nowrap">POL-2023-4576</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-start mb-3">
+                                        <div class="icon-box d-flex align-items-start rounded">
+                                            <i style="color: #FF3CDB;background-color: #FED7F7;" class="fa-solid fa-calendar-days fs-2 px-3 py-2 rounded"></i>
+                                            <div class="d-flex flex-column mx-3">
+                                                <p class="mb-0 text-nowrap">START DATE</p>
+                                                <p class="mb-0 fw-bold text-nowrap">Jan 15, 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6 d-flex justify-content-start mb-3">
+                                        <div  class="icon-box d-flex align-items-start">
+                                            <i style="color: #2AE55C;background-color: #B2FEC6;" class="fa-solid fa-dollar-sign fs-2 px-3 py-2 rounded"></i>
+                                            <div class="d-flex flex-column mx-3">
+                                                <p class="mb-0 text-nowrap">COVERAGE TYPE</p>
+                                                <p class="mb-0 fw-bold text-nowrap">R50000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-start mb-3">
+                                        <div class="icon-box d-flex align-items-start">
+                                          
+                                            <i style="color: #F94D4D;background-color: #F9CCCC;" class="fa-solid fa-heart-pulse fs-2 px-3 py-2 rounded"></i>
+                                            <div class="d-flex flex-column mx-3">
+                                                <p class="mb-0 text-nowrap">FUNERAL PLAN</p>
+                                                <p class="mb-0 fw-bold text-nowrap">Family Plan Type</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h2 class="fs-4"> <a href="">Recent Claims</a></h2>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center p-3 border rounded">
-                            <div>
-                                <p class="mb-0"><strong>Recent Claims Summary:</strong></p>
-                                <p class="mb-0">Pending: <span class="text-warning">1</span></p>
-                                <p class="mb-0">Approved: <span class="text-success">1</span></p>
-                                <p class="mb-0">Declined: <span class="text-danger">1</span></p>
+                        <div class="card shadow border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="fs-5 px-4 mx-2"> <a href="">Covered Family Members</a></h2> <p><a href="manage_beneficiaries.html">View All Members</a></p>
                             </div>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="row mt-4">
-                    
-                </div>
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <h2><a href="#">Covered Family Members</a> </h2>
-                        <div class="border p-3 rounded">
-                            <p><strong>Policy Owner:</strong> Sithembiso Malinga</p>
-                            <p><strong>Spouse:</strong> Nomsa Malinga</p>
-                            <p><strong>Children:</strong> 2</p>
-                            <p><strong>Extended Family:</strong> 3</p>
-                        </div>
-                    </div>
+                            <div class="d-flex flex-column justify-content-between align-items-start p-3 rounded">
 
-                    <div class="col-md-6">
-                        <h2>Payment History</h2>
-                        <div class="border p-3 rounded">
-                            <p><strong>Last Payment Date:</strong> 2024-03-25</p>
-                            <p><strong>Amount Due:</strong> R750</p>
-                            <div class="d-flex gap-3">
-                                <a href="#" class="btn btn-primary">Pay Now</a>
-                                <a href="#" class="btn btn-secondary">Download Statement</a>
+                                <div class="d-flex">
+                                    <i class="fa-regular fa-user fs-4 rounded-circle d-inline-flex align-items-center justify-content-center me-3"
+                                               style="width: 48px; height: 48px;color: #000000;background-color: #D9D9D9;"></i>
+                                    <div class="d-flex flex-column">
+                                        <p>Sithembiso Malinga</p>
+                                        <p>Primary <span class="fa-solid fa-circle-dot"></span> 45 Years Old</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-regular fa-user fs-4 rounded-circle d-inline-flex align-items-center justify-content-center me-3"
+                                               style="width: 48px; height: 48px;color: #000000;background-color: #D9D9D9;"></i>
+                                    <div class="d-flex flex-column">
+                                        <p>Sithembiso Malinga</p>
+                                        <p>Primary <span class="fa-solid fa-circle-dot"></span> 45 Years Old</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-regular fa-user fs-4 rounded-circle d-inline-flex align-items-center justify-content-center me-3"
+                                               style="width: 48px; height: 48px;color: #000000;background-color: #D9D9D9;"></i>
+                                    <div class="d-flex flex-column">
+                                        <p>Sithembiso Malinga</p>
+                                        <p>Primary <span class="fa-solid fa-circle-dot"></span> 45 Years Old</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-regular fa-user fs-4 rounded-circle d-inline-flex align-items-center justify-content-center me-3"
+                                               style="width: 48px; height: 48px;color: #000000;background-color: #D9D9D9;"></i>
+                                    <div class="d-flex flex-column">
+                                        <p>Sithembiso Malinga</p>
+                                        <p>Primary <span class="fa-solid fa-circle-dot"></span> 45 Years Old</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-regular fa-user fs-4 rounded-circle d-inline-flex align-items-center justify-content-center me-3"
+                                               style="width: 48px; height: 48px;color: #000000;background-color: #D9D9D9;"></i>
+                                    <div class="d-flex flex-column">
+                                        <p>Sithembiso Malinga</p>
+                                        <p>Primary <span class="fa-solid fa-circle-dot"></span> 45 Years Old</p>
+                                    </div>
+                                </div>
+
+                                
+                                
                             </div>
-                        </div>
+                        </div> 
+                        
                     </div>
                     
                 </div>
+               
             </div>
             
 
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/773e7dadb7.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
