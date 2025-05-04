@@ -43,26 +43,47 @@
                 <div class="d-flex">
                     
                     <div class="d-flex w-100 m-2">
-                        <div class="card w-100">
+                        <div class="card w-100 border-0">
                             <div class="card-body">
-                                <div  class="d-flex justify-content-center align-items-start">
-                                    <a href="#" class="btn btn-primary m-0 py-2">Cancel claim submission</a>
-                                       <div class="d-flex justify-content-between">
-                                        <div class="timeline-item">Deceased Details</div>
-                                        <div class="timeline-item">Required Documents</div>
-                                        <div class="timeline-item">Review & Submit</div>
-                                       </div>
-                                </div>
-                                <div class="form">
-                                    <p>Deceaced Personal Details</p>
-                                    <p>Fullname</p>
-                                    <input type="text">
-                                    <p>Date of Death</p>
-                                    <input type="text">
-                                    <p>Cause of Death</p>
-                                    <input type="text">
-                                    <a href="#" class="btn btn-primary m-0 py-2">Next</a>
-                                </div>
+                                
+                                <form>
+                                    <p>1. Deceased Person's Details</p>
+                                    <div class="row mb-3">
+                                        <div class="col-6 mb-3">
+                                            <label for="expiryDate" class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="expiryDate" style="border: 1px solid #D9D9D9; height: 48px;">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="cvv" class="form-label">ID Number</label>
+                                            <input type="text" class="form-control" id="cvv" style="border: 1px solid #D9D9D9; height: 48px;">
+                                        </div>
+                                        
+                                        <div class="col-6 mb-3">
+                                            <label for="expiryDate" class="form-label">Date of Death</label>
+                                            <input type="date" class="form-control" id="expiryDate" style="border: 1px solid #D9D9D9; height: 48px;">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="relationship" class="form-label">Cause of Death</label>
+                                            <select class="form-select" id="cause_of_death" style="border: 1px solid #D9D9D9; height: 48px;">
+                                                <option selected disabled>Select Cause of Death</option>
+                                                <option value="natural">Natural</option>
+                                                <option value="unnatural">Unnatural</option>
+                                            </select>
+                                        </div>
+
+                                        <p>2. Required documents</p>
+                                        <div class="col-6 mb-3">
+                                            <label for="deathCertificate" class="form-label">Death certificate</label>
+                                            <input type="file" class="form-control" id="deathCertificate" style="border: 1px solid #D9D9D9; height: 58px;">
+                                        </div>
+                                        
+                                        
+                                        <div class="d-flex justify-content-end gap-2">
+                                            <button type="button" class="btn btn-outline-secondary btn-lg">Cancel</button>
+                                            <button type="submit" class="btn btn-primary btn-lg">Submit claim</button>
+                                        </div>
+                                    </div>
+                                </form>
                                 
 
                             </div>
